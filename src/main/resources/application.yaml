@@ -1,24 +1,24 @@
 spring:
   application:
     name: reactive-store
-  r2dbc:
-  url: r2dbc:postgresql://localhost:5432/reactivestore
-  username: postgres
-  password: secret
-  sql:
-  init:
-  mode: always
-  kafka:
-    bootstrap-servers: localhost:9092
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-  consumer:
-    group-id: reactive-store-group
-    auto-offset-reset: earliest
-  data:
-    redis:
-      host: localhost
-      port: 6379
+#  r2dbc:
+#  url: r2dbc:postgresql://localhost:5432/reactivestore
+#  username: postgres
+#  password: secret
+#  sql:
+#  init:
+#  mode: always
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#  consumer:
+#    group-id: reactive-store-group
+#    auto-offset-reset: earliest
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
 server:
   port: 8080

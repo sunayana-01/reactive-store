@@ -1,9 +1,6 @@
-package com.reactiveStore.reactive_store.service;
+package com.reactiveStore.reactive_store.playground;
 
-import com.reactiveStore.reactive_store.playground.Product;
 import org.springframework.stereotype.Service;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import java.util.List;
 
